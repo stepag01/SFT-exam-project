@@ -8,9 +8,9 @@ endif;
 ?>
 
 <!-- Hero-sektion -->
-<section class="bgimage">
+<section id="frontpage-box" class="bgimage">
   <div class="container-fluid">
-    <div class="row">
+    <div class="row w-100">
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
           <div class="hero-text">
             <div>
@@ -20,7 +20,7 @@ endif;
             </div>
             <div class="mt-3">
               <?php if ( get_field('paragraph' ) ):?> <!-- hero image - paragraf -->
-                <h5 class=""><?php echo esc_html( get_field('paragraph') );?> <strong><u><a class="text-black" href="<?php echo get_permalink(get_page_by_path("Cases"))?>">HER</a></u></strong></h5>
+                <h5 id="hero-paragraf"><?php echo esc_html( get_field('paragraph') );?> <strong><u><a class="text-black" href="<?php echo get_permalink(get_page_by_path("Cases"))?>">HER</a></u></strong></h5>
               <?php endif;?>
             </div>
           </div>
@@ -131,7 +131,7 @@ endif;
         <h2 id="tilmeld">TILMELD DIG VORES<strong> NYHEDSBREV</strong></h2> 
       </div>
       <div class="text-start px-5 py-2">
-        <p class="me-5">Hold dig opdateret på vores arrangementer i butikken samt løbende tilbud via vores nyhedsbrev, ved at tilmelde dig herunder.</p>
+        <p id="tilmeld-paragraf" class="me-5">Hold dig opdateret på vores arrangementer i butikken samt løbende tilbud via vores nyhedsbrev, ved at tilmelde dig herunder.</p>
       </div>
       <div id="mc_embed_signup">
         <form action="https://easv365.us21.list-manage.com/subscribe/post?u=b86e2bda8f5db7614c413780b&amp;id=a1de8dac54&amp;f_id=0055ece6f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
@@ -179,7 +179,7 @@ endif;
             </div>
                 <div class="optionalParent">
                     <div class="clear foot">
-                        <input type="submit" name="tilmeld" id="mc-embedded-subscribe" class="button" value="Tilmeld">
+                        <input id="newsletter-button" type="submit" name="tilmeld" id="mc-embedded-subscribe" class="button" value="Tilmeld">
                         <p style="margin: 0px auto;"><a href="http://eepurl.com/iE-be2" title="Mailchimp - email marketing made easy and fun"><span style="display: inline-block; background-color: transparent; border-radius: 4px;"></span></a></p>
                     </div>
                 </div>
@@ -209,7 +209,7 @@ $Reviews = new WP_Query(
 ?>
 
 <div id="anmeldelses-section" class="container">
-  <div class="row text-center">
+  <div class="row w-100 text-center">
     <?php while($Reviews->have_posts()): $Reviews->the_post()?>
       <div class="col-md-4 col-lg-4 mb-4">
         <div class="d-flex justify-content-center mb-2 font-italic px-3">

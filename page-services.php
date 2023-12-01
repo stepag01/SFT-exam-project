@@ -79,14 +79,14 @@ endif;
 </div>
 
 
-<div class="item">
-  <div class="row justify-content-center">
+<div id="service-box" class="item">
+  <div class="row justify-content-center w-100">
     <div class="col-md-6 col-lg-5 pt-5">
       <div class="img pb-5 text-center">
         <img id="service-img" src="<?php the_field("service_section_contact_image") ?>" class="mx-auto" alt="">
       </div>
     </div>
-    <div id="service-contact-section" class="px-5 col-md-6 col-lg-5">
+    <div id="service-contact-section" class="col-md-6 col-lg-5">
       <h5 id="contact-heading">HOS <strong>SØRENS FARVE & TAPET</strong><br> ER VI KLAR TIL <strong> HJÆLPE DIG</strong></h5>
       <?php echo do_shortcode('[contact-form-7 id="cf12f98" title="Kontakt-form1"]')?>
     </div>

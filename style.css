@@ -270,7 +270,6 @@ a {
 
 .mc-field-group {
   padding-bottom: 20px;
-  padding-left: 0px;
 }
 
 .text {
@@ -331,8 +330,7 @@ a {
 
 #service-contact-section {
   font-size: 14px;
-  padding-bottom: 20px;
-  margin-left:-20px;
+  padding-bottom:20px;
   height: 700px;
 }
 
@@ -378,6 +376,19 @@ a {
   margin-left: 45px;
 }
 
+#case-description1 {
+  margin-top: -20px;
+}
+
+#case-description2 {
+  margin-top: -20px;
+}
+
+#case-description3 {
+  margin-top: -20px;
+}
+
+
 /*GALLERI STYLING*/
 .zoom-img:hover {
   transform: scale(1.1); /* Adjust the scale factor for your desired zoom level */
@@ -409,6 +420,11 @@ a {
   margin-left: 25px;  
 }
 
+#contact-img {
+  height: 530px;
+  margin-bottom: 20px;
+}
+
 /*BRANDS-SECTION STYLING*/
 
 #brands-box {
@@ -425,14 +441,6 @@ a {
 }
 
 
-/*ABOUT-US STYLING*/
-
-#aboutus-container {
-  margin-left: 2px;
-}
-
-
-
 /*MOBILE VERSION*/
 @media only screen and (max-width: 600px) {
   /*FORSIDE*/
@@ -447,6 +455,10 @@ a {
     width: 100%;
     height: 140px;
     background-color: rgba(235, 235, 235, 0.879);
+  }
+
+  #hero-paragraf {
+    font-size: 14px;
   }
 
 
@@ -506,17 +518,15 @@ a {
 
   #service-img {
     height: 340px;
-    padding-left: 0;
   }
 
   #headline-service {
     font-size: 18px;
-    padding-left: 15px;
     padding-top: 0;
   }
 
   #newsletter-box {
-    height: 1250px;
+    height: 1190px;
     display: grid;
     margin-top: 10px;
   } 
@@ -526,18 +536,36 @@ a {
   }
   
   #tilmeld {
-    padding-top: 5;
+    margin-top: -75px;
+    margin-left: -15px;
   }
 
-  #mc_embed_signup{
-    margin-left: 40px;
+  #tilmeld-paragraf{
+    margin-left: -15px;
   }
 
   #anmeldelses-box {
     height: 160px;
   }
-}
 
+  #mc_embed_signup{
+    margin-left: -40px;
+  }
+
+  .mc-field-group {
+    margin-left: 75px;
+  }
+
+  #newsletter-button {
+    margin-left: 75px;
+  }
+
+  #anmeldelses-section {
+    padding-left: 32px;
+    margin-bottom: 40px;
+  }
+  
+}
 
 
 @media (max-width: 576px) {
@@ -554,54 +582,72 @@ a {
     margin-bottom: -30px;
   }
 
+  #aboutus-img {
+    margin-left: 10px;
+  }
+
 }
 
 
 /*SERVICE-SIDE STYLING*/
 @media only screen and (max-width: 667px) {
   #service-img {
-    height: 400px;
-    margin-left: -42px;
+    height: 470px;
+    padding-left: 23px;
   } 
 
   #service-contact-section {
     height: 700px;
-    margin-top: -40px;
+    padding-left: 45px;
   }
   
+  #service-box {
+    height: 1170px;
+  }
+
 }
 
 
 /*CASES-RESPONSIVE*/
 @media only screen and (max-width: 667px) {
   #cases-img1 {
-    height: 400px;
-    margin-left: 9px;
+    height: 420px;
+    margin-left: 0px;
   }
   
   #cases-img2 {
-    height: 400px;
-    margin-left: 9px;
+    height: 420px;
+    margin-left: 0px;
   }
 
   #cases-img3 {
-    height: 300px;
-    width: 300px;
-    margin-left: 8px;
+    height: 320px;
+    width: 320px;
+    margin-left: 0px;
   }
 
-  #case-textarea-one {
-    margin-left: 20px;
-    margin-top: -35px;
-    margin-bottom: 20px;
+  #case-paragraf1 {
+    margin-top: -40px;
   }
 
-  #case-textarea-two {
-    margin-left: 20px;
+  #case-paragraf2 {
+    margin-top: -40px;
   }
 
-  #case-textarea-three {
-    margin-left: 20px;
+  #case-paragraf3 {
+    margin-top: -60px;
+  }
+
+  #case-description1 {
+    margin-top: -20px;
+  }
+
+  #case-description2 {
+    margin-top: -20px;
+  }
+
+  #case-description3 {
+    margin-top: -20px;
   }
 
 }
@@ -624,7 +670,7 @@ a {
 /*CONTACT-FORM STYLING*/
 @media only screen and (max-width: 667px) {
   #contact-hero-image {
-    height: 395px;
+    height: 400px;
   }
   
   #service-contactform-section {
@@ -633,19 +679,44 @@ a {
   
   #contact-info-section {
     height: 460px;
-    margin-left: 8px;
+    margin-left: 20px;
     background-color: #8d7b7418;
   }
 
   #contact-form-image {
     height: 30px;
   }
+
+  #service-contact-section {
+    margin-right: 20px;
+  }
+
+  #contact-form-headline {
+    margin-top: -70px;
+    margin-bottom: 30px;
+  }
+
+  #contact-form-box {
+    height: 1045px;
+  }
+  
+  #contact-heading {
+    margin-top: -15px;
+    margin-bottom: -5px;
+    font-size: 18px;
+  }
+
+  #contact-info-section {
+    margin-top: -48px; 
+  }
+
+  #contact-img {
+    height: 340px;
+    padding-left: 17px;
+  }
    
 }
 
-#service-card1 {
-  width: 12rem;
-}
 
 
 
@@ -697,12 +768,33 @@ a {
   }
 
   #tilmeld {
-    padding-top: 8px;
+    padding-top: 20px;
+    font-size: 20px;
   }
+
+  #newsletter-box {
+    height: 520px;
+  } 
+
+  #newsletter-img {
+    height: 520px;
+  } 
+
+  #newsletter-button {
+    margin-top: -10px;
+  }
+
+  #ydelser-box {
+    height: 220px;
+  }
+
+}
 
 
 
 /*ABOUT-US*/
+@media (min-width:768px) and (max-width:900px) {
+
   #aboutus-container {
     height: 570px;
     margin-top: 30px;
@@ -714,7 +806,7 @@ a {
   }
 
   #service-img {
-    height: 400px;
+    height: 430px;
     margin-left: 25px;
     margin-top: 30px;
   }
@@ -735,13 +827,69 @@ a {
     width: 300px;
     margin-left: 45px;
   }
+
 }
 
 
+/*CONTACT-FORM STYLING*/
 @media (min-width:768px) and (max-width:900px) {
-/*OM-SIDE*/
+
+  #contact-img {
+    height: 320px;
+    margin-bottom: 20px;
+  }
+
+  #contact-hero-image {
+    height: 360px;
+  }
+  
+  #contact-info-section {
+    height: 360px;
+    margin-left: 30px;
+    font-size: 14px;
+  }
+
+  #contact-info-textarea1 {
+    margin-top: -30px;
+    margin-left: 10px;
+  }
+
+  #headline2-contact {
+    margin-left: 10px;
+  }
+
+  #contact-info-textarea2 {
+    margin-left: 10px;
+  }
+
+  #contact-box {
+    height: 1350px;
+  }
+
+  #service-box {
+    height: 655px;
+  }
+
+  #contact-heading {
+    margin-top: 5px;
+  }
 
 }
 
 
+/*CASE-FORM STYLING*/
+@media (min-width:768px) and (max-width:900px) {
 
+#case-description1 {
+  margin-top: -20px;
+}
+
+#case-description2 {
+  margin-top: -20px;
+}
+
+#case-description3 {
+  margin-top: -20px;
+}
+
+}

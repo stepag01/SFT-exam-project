@@ -8,17 +8,17 @@ endif;
 ?> 
 
 <div class="text-center pt-5 pb-3">
-    <h3><strong>VI GLÆDER OS</strong> TIL AT HØRE FRA DIG</h3>
+    <h3 id="contact-heading" ><strong>VI GLÆDER OS</strong> TIL AT HØRE FRA DIG</h3>
 </div>
 
-<section class="mb-4 pt-5">
+<section id="contact-box" class="mb-4 pt-5">
     <div class="row w-100 justify-content-center">
         <div class="col-md-4 mb-5 me-3">
-            <img id="contact-hero-image" src="<?php the_field("contact_image")?>">
+            <img id="contact-hero-image" src="<?php the_field("contact_image")?>" class="mx-auto">
         </div>
 
         <div id="contact-info-section" class="col-md-5 text-start pt-5 pb-3 px-5">
-            <ul class="list-unstyled">
+            <ul id="contact-info-textarea1" class="list-unstyled">
                 <li class="d-flex align-items-center pt-3">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="29" fill="currentColor" class="bi bi-geo-alt-fill mb-2" viewBox="0 0 17 17">
                         <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
@@ -47,9 +47,9 @@ endif;
                 </li>
             </ul>
             <div>
-            <p class="text-black mb-4 pt-4">ÅBNINGSTIDER</p>
+            <p id="headline2-contact" class="text-black mb-4 pt-4">ÅBNINGSTIDER</p>
                     <div class="row">
-                        <div class="col d-flex">
+                        <div id="contact-info-textarea2" class="col d-flex">
                             <div>
                                 <p>Man-Fre:</p>
                                 <p>Lørdag:</p>
@@ -67,7 +67,6 @@ endif;
         </div> 
     </div>
 
-   
 
     <div class="text-center pt-5 px-3 px-sm-5">
         <h3>HAR DU YDERLIGERE <strong>SPØRGSMÅL?</strong></h3>
@@ -77,19 +76,20 @@ endif;
             <?php endif; ?>  
         </div>
     </div>
+    
 
-<div class="item pb-5">
+<div id="contact-form-box" class="item">
   <div class="row w-100 justify-content-center">
-    <div class="col-md-6 me-3 px-5 pt-5">
-      <div class="img py-4">
-      <div class="col-lg-3 px-5"><img src="<?php the_field("contact_form_image") ?>" alt="" height="500"></div>
+    <div class="col-md-6 col-lg-5 pt-5">
+      <div class="img pb-5 text-center">
+        <img id="contact-img" src="<?php the_field("contact_form_image") ?>" class="mx-auto" alt="">
       </div>
     </div>
-    <div id="contact-form-section" class="pt-5 col-lg-5">
-        <h3 class="pt-5">VI STÅR KLAR TIL AT <strong>HJÆLPE DIG</strong></h3>
+    <div id="service-contact-section" class="px-5 col-md-6 col-lg-5">
+    <h3 id="contact-form-headline" class="pt-5">VI STÅR KLAR TIL AT <strong>HJÆLPE DIG</strong></h3>
         <?php echo do_shortcode('[contact-form-7 id="b7c4d11" title="Kontakt-form2"]')?>
-        </div>
     </div>
+  </div>
 </div>
 
 </section>
