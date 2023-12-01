@@ -48,23 +48,6 @@ endif;
 </div> 
 
 
-<!-- <div id="brands-box" class="container px-sm-5 text-center">
-  <div class="row">
-    <div class="col-lg-3 col-sm-3 col-md-6 mt-3">
-      <img src="<?php the_field("brand_image_one")?>" height="90">
-    </div>
-    <div class="col-lg-3 col-sm-3 col-md-6 mt-3">
-      <img src="<?php the_field("brand_image_two")?>" height="90">
-    </div>
-    <div class="col-lg-3 col-sm-3 col-md-6 mt-3">
-      <img src="<?php the_field("brand_image_three")?>" height="90">
-    </div>
-    <div class="col-lg-3 col-sm-3 col-md-6 mt-3">
-      <img src="<?php the_field("brand_image_four")?>" height="90">
-    </div>
-  </div>
-</div>  -->
-
 
 <!-- Titel -->
 <div class="text-center mt-5 px-4 px-sm-2"> <!-- Adjusted padding for small screens and left padding for large screens -->
@@ -151,26 +134,57 @@ endif;
         <p class="me-5">Hold dig opdateret på vores arrangementer i butikken samt løbende tilbud via vores nyhedsbrev, ved at tilmelde dig herunder.</p>
       </div>
       <div id="mc_embed_signup">
-      <form action="https://easv365.us21.list-manage.com/subscribe/post?u=b86e2bda8f5db7614c413780b&amp;id=a1de8dac54&amp;f_id=0055ece6f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
-        <div id="mc_embed_signup_scroll">
-            <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-            <div class="mc-field-group"><label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""></div><div class="mc-field-group"><label for="mce-FNAME">First Name </label><input type="text" name="FNAME" class=" text" id="mce-FNAME" value=""></div><div class="mc-field-group"><label for="mce-PHONE">Phone Number </label><input type="text" name="PHONE" class="REQ_CSS" id="mce-PHONE" value=""></div><div class="mc-field-group"><label for="mce-LNAME">Last Name </label><input type="text" name="LNAME" class=" text" id="mce-LNAME" value=""></div>
-        <div id="mce-responses" class="clear foot">
-            <div class="response" id="mce-error-response" style="display: none;"></div>
-            <div class="response" id="mce-success-response" style="display: none;"></div>
-        </div>
-        <div style="position: absolute; left: -5000px;" aria-hidden="true">
-          /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
-          <input type="text" name="b_b86e2bda8f5db7614c413780b_a1de8dac54" tabindex="-1" value="">
-        </div>
-        <div class="optionalParent">
-            <div class="clear foot">
-                <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
-                <p style="margin: 0px auto;"><a href="http://eepurl.com/iE-be2" title="Mailchimp - email marketing made easy and fun"><span style="display: inline-block; background-color: transparent; border-radius: 4px;"><img class="refferal_badge" src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg" alt="Intuit Mailchimp" style="width: 220px; height: 40px; display: flex; padding: 2px 0px; justify-content: center; align-items: center;"></span></a></p>
+        <form action="https://easv365.us21.list-manage.com/subscribe/post?u=b86e2bda8f5db7614c413780b&amp;id=a1de8dac54&amp;f_id=0055ece6f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+            <div id="mc_embed_signup_scroll">
+                <div class="mc-field-group">
+                  <div>
+                    <div class="row d-flex">
+                      <label for="mce-FNAME">Dit fornavn <span class="asterisk">*</span></label>
+                    </div>
+                    <div class="pt-2">
+                      <input type="text" name="FNAME" class="text" id="mce-FNAME" value=""></div><div class="mc-field-group">
+                    </div>
+
+                    <div class="row d-flex">
+                      <label for="mce-LNAME">Dit efternavn </label>
+                    </div>
+                    <div class="pt-2">
+                      <input type="text" name="LNAME" class="text" id="mce-LNAME" value=""></div><div class="mc-field-group">
+                    </div>
+
+                    <div class="row d-flex">
+                      <label for="mce-LNAME">Din email <span class="asterisk">*</span></label>
+                    </div>
+                    <div class="pt-2">
+                      <input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""></div><div class="mc-field-group">
+                    </div>
+
+                    <div class="row d-flex">
+                      <label for="mce-PHONE">Dit mobilnummer </label>
+                    </div>
+                    <div class="pt-2">
+                      <input type="text" name="PHONE" class="REQ_CSS" id="mce-PHONE" value="">
+                    </div>
+                  </div>
+                  <div class="indicates-required pt-2"><span class="asterisk">*</span> Påkrævet</div>
+                </div>
+                <div id="mce-responses" class="clear foot">
+                <div class="response" id="mce-error-response" style="display: none;"></div>
+                <div class="response" id="mce-success-response" style="display: none;"></div>
+
             </div>
-        </div>
-        </div>
-      </form>
+            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
+                <input type="text" name="b_b86e2bda8f5db7614c413780b_a1de8dac54" tabindex="-1" value="">
+            </div>
+                <div class="optionalParent">
+                    <div class="clear foot">
+                        <input type="submit" name="tilmeld" id="mc-embedded-subscribe" class="button" value="Tilmeld">
+                        <p style="margin: 0px auto;"><a href="http://eepurl.com/iE-be2" title="Mailchimp - email marketing made easy and fun"><span style="display: inline-block; background-color: transparent; border-radius: 4px;"></span></a></p>
+                    </div>
+                </div>
+            </div>
+        </form>
       </div>
     </div>
 </div>
