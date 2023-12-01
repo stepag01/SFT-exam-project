@@ -306,11 +306,12 @@ a {
 }
 
 .button {
-  border: solid 1px;
+  border: solid 1px #b59660;
   padding: 6px;
   width: 75px;
   height: 35px;
-  background-color: #ffffff00;
+  background-color: #ab8d59;
+  color: #000000;
 }
 
 
