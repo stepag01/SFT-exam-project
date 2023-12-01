@@ -1,0 +1,667 @@
+/*
+Theme name: Sørens Farve & Tapet
+Auther: Team SKM
+*/
+
+
+body, html {
+    height: 100vh;
+    background-color: #fcfcfc
+}
+
+/*FORSIDE STYLING*/
+.bgimage {
+    width:100%;
+    height: 100%;
+    background: url('http://srens-farve-tapet.local/wp-content/uploads/2023/11/pexels-nugroho-wahyu-3097112-scaled-e1701281663525.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.hero-text {
+    color: #666666;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #e4e4e4b5;
+    padding-top:40px;
+    height: 170px;
+    width: 600px;
+}
+
+.container {
+    height: 260px;
+}
+
+#reviews {
+    font-weight: bold;
+    padding-bottom: 20px;
+}
+
+
+.text-small {
+    font-size: 0.9rem;
+}
+  
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+}
+  
+footer {
+    background: #f5f5f5;
+    height: 290px;
+}
+
+
+.opening-hours {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar {
+  width: 100%;
+  z-index: 1;
+  background: #f5f5f5;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 62px;
+  background: #f5f5f5;
+}
+
+.navbar .menu-items {
+  display: flex;
+}
+
+.navbar .nav-container li {
+  list-style: none;
+}
+
+.navbar .nav-container a {
+  text-decoration: none;
+  color: rgb(102, 102, 102);
+  font-weight: 500;
+  font-size: 13px;
+  width: 150px;
+  text-align: start;
+  padding:5px;
+}
+
+.navbar .nav-container a:hover{
+    font-weight: bold;
+}
+
+.nav-container {
+  display: block;
+  position: relative;
+  height: 60px;
+}
+
+.nav-container .checkbox {
+  position: absolute;
+  display: block;
+  height: 32px;
+  width: 32px;
+  top: 20px;
+  left: 20px;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.nav-container .hamburger-lines {
+  display: block;
+  height: 26px;
+  width: 32px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+ 
+}
+
+.logo {
+    position: absolute;
+    margin-top: 6px;
+    right:20px;
+    color: #0e2431;
+    text-align: start;
+  }
+
+.nav-container .hamburger-lines .line {
+  display: block;
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+  background: #3d3d3d;
+}
+
+.nav-container .hamburger-lines .line1 {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line2 {
+  transition: transform 0.2s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line3 {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+}
+
+.navbar .menu-items {
+  padding-top: 110px;
+  background: #f5f5f5f4;
+  height: 100vh;
+  width: 30%;
+  transform: translate(-150%);
+  display: flex;
+  flex-direction: column;
+  margin-left: -82px;
+  padding-left: 60px;
+  transition: transform 0.5s ease-in-out;
+  text-align: center;
+}
+
+.navbar .menu-items li {
+  margin-bottom: 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+
+.nav-container input[type="checkbox"]:checked ~ .menu-items {
+  transform: translateX(0);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+  transform: rotate(45deg);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+  transform: scaleY(0);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+  transform: rotate(-45deg);
+}
+
+.nav-container input[type="checkbox"]:checked ~ .logo{
+  display: none;
+}
+
+#ydelser-box {
+  height: 200px;
+}
+
+#ydelser-box a {
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#newsletter-box {
+  background-color:#b59660b1;
+  display: flex;
+  width: 100%;
+  height: 530px;
+} 
+
+#newsletter-img {
+  height: 530px;
+  object-fit: contain;
+}
+
+#tilmeld {
+  padding-top: 30px;
+}
+
+#anmeldelses-box {
+  height: 150px;
+}
+
+#review-description {
+  font-size: 14px;
+  padding: 10px;
+}
+
+
+/*SERVICE-SIDE STYLING*/
+.service-container {
+  background-color: #fcfcfc;
+  height: 590px;
+  display: flex;
+  margin-top: 30px;
+}
+
+#service-img {
+  height: 530px;
+  margin-bottom: 20px;
+}
+
+#service-contact-section {
+  font-size: 14px;
+  padding-bottom: 20px;
+  margin-left:-20px;
+  height: 700px;
+}
+
+
+#contact-form-section {
+  font-size: 14px;
+  padding-bottom: 10px;
+  height: 400px;
+}
+
+#contact-heading {
+  font-size: 23px;
+  margin-top: 30px;
+  padding-top: 20px;
+  margin-bottom: 15px;
+}
+
+.wpcf7 input[type="submit"] {
+  background-color: #fcfcfc;
+  border: none;
+  font-weight: 500;
+  font-size: 15px;
+  border: #3d3d3d solid 1px;
+  width: 70px;
+  height: 30px;
+}
+
+
+/*CASES STYLING*/
+#cases-img1 {
+  height: 550px;
+  margin-left: 45px;
+}
+
+#cases-img2 {
+  height: 550px;
+  margin-left: 45px;
+}
+
+#cases-img3 {
+  height: 455px;
+  width: 410px;
+  margin-left: 45px;
+}
+
+/*GALLERI STYLING*/
+.zoom-img:hover {
+  transform: scale(1.1); /* Adjust the scale factor for your desired zoom level */
+  transition: transform 0.6s ease; /* Add a smooth transition effect */
+}
+
+#galleri {
+  margin-left: 0.5px;
+}
+
+
+/*CONTACT-FORM STYLING*/
+
+#contact-hero-image {
+  height:460px;
+}
+
+#service-contactform-section {
+  margin-top: 2px;
+}
+
+#contact-info-section {
+  height: 460px;
+  margin-left: 8px;
+  background-color: #8d7b7418;
+}
+
+#cases-box {
+  margin-left: 25px;  
+}
+
+/*BRANDS-SECTION STYLING*/
+
+#brands-box {
+  height: 120px;
+  background-color: #f3f3f3;
+}
+
+#brands-innerbox {
+  padding-left: 40px;
+}
+
+#anmeldelses-section {
+  height: 320px;
+}
+
+
+/*ABOUT-US STYLING*/
+
+#aboutus-container {
+  margin-left: 2px;
+}
+
+
+
+/*MOBILE VERSION*/
+@media only screen and (max-width: 600px) {
+  /*FORSIDE*/
+
+  .navbar .menu-items {
+    height: 50.5vh;
+    width: 100%;
+  }
+
+  .hero-text {
+    top: 50%;
+    width: 100%;
+    height: 140px;
+    background-color: rgba(235, 235, 235, 0.879);
+  }
+
+
+  .bgimage {
+    width: 100%;
+    height: 400px;
+  }
+
+  #headline-hero {
+    font-size: 25px;
+  }
+
+  #paragraph-hero {
+    font-size: 15px;
+  }
+
+  #anmeldelses-box {
+    height: 500px;
+  }
+
+  #footer-box {
+    height: 790px;
+  }
+
+  #socials-footer {
+    padding-left: 0;
+    justify-content: flex-start;
+  }
+
+  .navbar .menu-items {
+    background-color:  #f5f5f5;
+    padding-top: 70px;
+    margin-left: -30px;
+  }
+
+  .navbar .nav-container a {
+    padding:3px;
+  }
+
+  #ydelser-box {
+    height: 450px;
+  }
+
+  #service-box {
+    margin-left: -8px;
+  }
+
+  #services-box {
+    height: 600px;
+  }
+
+  .service-container {
+    height: 460px;
+    display: grid;
+    margin-top: 30px;
+  }
+
+  #service-img {
+    height: 340px;
+    padding-left: 0;
+  }
+
+  #headline-service {
+    font-size: 18px;
+    padding-left: 15px;
+    padding-top: 0;
+  }
+
+  #newsletter-box {
+    height: 900px;
+    display: grid;
+    margin-top: 10px;
+  } 
+  
+  #newsletter-img {
+    height: 563px;
+  }
+  
+  #tilmeld {
+    padding-top: 5;
+  }
+}
+
+#anmeldelses-box {
+  height: 160px;
+}
+
+@media (max-width: 576px) {
+  .center-on-small {
+    justify-content: center !important; /* Use !important to override Bootstrap's default styles */
+  }
+}
+
+
+/*OM-SIDE-RESPONSIVE*/
+@media only screen and (max-width: 667px) {
+  #about-us-box {
+    padding-top: 30px;
+    margin-bottom: -30px;
+  }
+
+}
+
+
+/*SERVICE-SIDE STYLING*/
+@media only screen and (max-width: 667px) {
+  #service-img {
+    height: 400px;
+    margin-left: -42px;
+  } 
+
+  #service-contact-section {
+    height: 700px;
+    margin-top: -40px;
+  }
+  
+}
+
+
+/*CASES-RESPONSIVE*/
+@media only screen and (max-width: 667px) {
+  #cases-img1 {
+    height: 400px;
+    margin-left: 9px;
+  }
+  
+  #cases-img2 {
+    height: 400px;
+    margin-left: 9px;
+  }
+
+  #cases-img3 {
+    height: 300px;
+    width: 300px;
+    margin-left: 8px;
+  }
+
+  #case-textarea-one {
+    margin-left: 20px;
+    margin-top: -35px;
+    margin-bottom: 20px;
+  }
+
+  #case-textarea-two {
+    margin-left: 20px;
+  }
+
+  #case-textarea-three {
+    margin-left: 20px;
+  }
+
+}
+
+/*BRANDS-SECTION STYLING*/
+
+@media only screen and (max-width: 667px) {
+  #brands-box {
+    height: 450px;
+  }
+}
+
+/*ANMELDELSES-SECTION STYLING*/
+
+@media only screen and (max-width: 667px) {
+  #anmeldelses-section {
+    height: 830px;
+  }
+  
+}
+
+/*CONTACT-FORM STYLING*/
+@media only screen and (max-width: 667px) {
+  #contact-hero-image {
+    height: 395px;
+  }
+  
+  #service-contactform-section {
+    margin-top: 2px;
+  }
+  
+  #contact-info-section {
+    height: 460px;
+    margin-left: 8px;
+    background-color: #8d7b7418;
+  }
+
+  #contact-form-image {
+    height: 30px;
+  }
+   
+}
+
+#service-card1 {
+  width: 12rem;
+}
+
+
+
+
+
+
+
+
+/*TABLET VERSION*/
+@media (min-width:768px) and (max-width:900px) {
+/*FORSIDE*/
+  .hero-text {
+    top: 50%;
+  } 
+
+  .bgimage {
+    height: 600px;
+  }
+
+  #ydelser-box {
+    height: 250px;
+  }
+
+  #services-first3 {
+    padding-bottom: 10px;
+    font-size: 14px;
+  }
+
+  #services-second3 {
+    padding-bottom: 10px;
+    font-size: 14px;
+  }
+
+  #services-third3 {
+    padding-bottom: 10px;
+    font-size: 14px;
+  }
+
+  #footer-box {
+    height: 480px;
+  }
+
+  #brands-box {
+    height: 250px;
+  }
+
+  #anmeldelses-section {
+    height: 410px;
+  }
+
+/*ABOUT-US*/
+  #aboutus-container {
+    height: 570px;
+    margin-top: 30px;
+  }
+
+  #about-us-box {
+    margin-top: 30px;
+    margin-left: -10px;
+  }
+
+  #service-img {
+    height: 400px;
+    margin-left: 25px;
+    margin-top: 30px;
+  }
+
+  /*CASES STYLING*/
+#cases-img1 {
+  height: 360px;
+  margin-left: 45px;
+}
+
+#cases-img2 {
+  height: 360px;
+  margin-left: 45px;
+}
+
+#cases-img3 {
+  height: 300px;
+  width: 300px;
+  margin-left: 45px;
+}
+
+
+}
+
+@media (min-width:768px) and (max-width:900px) {
+/*OM-SIDE*/
+
+}
+
+
+
