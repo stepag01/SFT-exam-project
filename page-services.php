@@ -9,12 +9,17 @@ endif;
 
 <div class="item text-center px-5"> 
       <div class="pt-5">
-            <h3>YDELSER HOS <strong>SØRENS FARVE & TAPET</strong></h3>
+            <h2>YDELSER HOS <strong>SØRENS FARVE & TAPET</strong></h2>
+      </div>
+      <div class="py-1">
+          <?php if ( get_field('service_title_description') ):?> 
+              <em><h3 id="services-title" class="text-black"><?php echo esc_html( get_field('service_title_description') );?></h3></em>
+          <?php endif;?>
       </div>
       <div class="pt-2 pb-3 pb-sm-4 px-3 px-sm-5">
-            <?php if ( get_field('service-description') ):?> 
-                  <p class="text-black"><?php echo esc_html( get_field('service-description') );?></p>
-            <?php endif;?>
+          <?php if ( get_field('service-description') ):?> 
+              <p class="text-black"><?php echo esc_html( get_field('service-description') );?></p>
+          <?php endif;?>
       </div>
 </div>
 

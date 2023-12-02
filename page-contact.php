@@ -7,8 +7,15 @@ if (have_posts()) : the_post();
 endif;
 ?> 
 
-<div class="text-center pt-5 pb-3">
-    <h3 id="contact-heading" ><strong>VI GLÆDER OS</strong> TIL AT HØRE FRA DIG</h3>
+<div class="text-center pt-3 pb-3">
+    <div>
+        <h2 id="contact-heading"><strong>KONTAKT OS</strong></h2>
+    </div>
+    <div>
+        <?php if ( get_field('contact_title_') ):?> 
+            <em><h3 id="contact-title" class="text-black"><?php echo esc_html( get_field('contact_title_') );?></h3></em>
+        <?php endif;?>
+    </div>
 </div>
 
 <section id="contact-box" class="mb-4 pt-5">
@@ -56,8 +63,12 @@ endif;
                                 <p>Søndag:</p>
                             </div>
                             <div class="px-4">
-                                <p>9.00 - 17.30</p>
-                                <p>9.00 - 13.00</p>
+                            <?php if (get_field('opening_hours_monday_friday')):?>
+                                <p class="text-black"><?php echo esc_html(get_field('opening_hours_monday_friday'));?></p>
+                            <?php endif; ?>
+                            <?php if (get_field('opening_hours_saturday')):?>
+                                <p class="text-black"><?php echo esc_html(get_field('opening_hours_saturday'));?></p>
+                            <?php endif; ?>
                                 <p>LUKKET</p>
                             </div>
                         </div>

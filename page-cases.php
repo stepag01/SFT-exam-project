@@ -9,7 +9,12 @@ endif;
 
 <div class="item text-center px-5">
   <div class="pt-5">
-    <h3>CASES HOS <strong>SØRENS FARVE & TAPET</strong></h3>
+    <h2>CASES HOS <strong>SØRENS FARVE & TAPET</strong></h2>
+  </div>
+  <div class="py-1">
+    <?php if (get_field('case_title_description')):?> 
+      <em><h3 id="cases-title" class="text-black"><?php echo esc_html(get_field('case_title_description'));?></h3></em>
+    <?php endif;?>
   </div>
   <div class="pt-3 px-2 text-center px-sm-5">
     <?php if (get_field('cases_description')):?> 

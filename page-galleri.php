@@ -10,8 +10,10 @@ endif;
 <!-- Gallery -->
 <div id="galleri" class="row w-100 d-flex justify-content-center mt-5 mb-5">
     <div class="text-center pb-5">
-        <h3><strong>SØRENS FARVE & TAPET</strong></h3>
-        <h5>GALLERI INSPIRATION</h5>
+        <h2>SØRENS FARVE & TAPET <strong>GALLERI</strong></h2>
+        <?php if (get_field('galleri_titel')): ?>
+            <em><h3 id="galleri-title" class="text-black"><?php echo esc_html(get_field('galleri_titel')); ?></h3></em>
+        <?php endif; ?>
     </div>
     
     <div class="col-md-12 col-lg-3 mb-4 mb-lg-0">

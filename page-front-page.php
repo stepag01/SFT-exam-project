@@ -50,13 +50,20 @@ endif;
 
 
 <!-- Titel -->
-<div class="text-center mt-5 px-4 px-sm-2"> <!-- Adjusted padding for small screens and left padding for large screens -->
+<div class="text-center mt-5 px-4 px-sm-2"> 
   <div class="pt-4 pb-2">
-    <h3> VORES <strong> YDELSER </strong></h3>
+    <h2><strong> YDELSER </strong>HOS SØRENS FARVE & TAPET</h2>
+  </div>
+  <div class="pb-2">
+    <?php if (get_field('frontpage_service_title')):?> 
+        <h3 id="frontpage-title" class="text-black px-3 px-sm-0"> 
+        <em><?php echo esc_html(get_field('frontpage_service_title'));?></em>
+      </h3>
+    <?php endif;?>
   </div>
   <div class="px-3 px-md-5">
     <?php if (get_field('description')):?> 
-        <p class="text-black px-3 px-sm-0"> <!-- Adjusted padding for small screens -->
+        <p class="text-black px-3 px-sm-0"> 
           <?php echo esc_html(get_field('description'));?>
         </p>
     <?php endif;?>
@@ -70,17 +77,17 @@ endif;
     <div id="services-first3" class="row d-flex justify-content-around">
         <div class="col-12 col-sm-3">
             <?php if (get_field('service_one')):?>
-                <a class="text-black" href="<?php echo get_permalink(get_page_by_path("services"))?>"><p class="text-black"><?php echo esc_html(get_field('service_one'));?></p></a>
+                <a class="text-black" href="<?php echo get_permalink(get_page_by_path("service_one"))?>"><p class="text-black"><?php echo esc_html(get_field('service_one'));?></p></a>
             <?php endif;?>
         </div>
         <div class="col-12 col-sm-3">
             <?php if (get_field('service_two')):?>
-              <a class="text-black" href="<?php echo get_permalink(get_page_by_path("services"))?>"><p class="text-black"><?php echo esc_html(get_field('service_two'));?></p></a>
+              <a class="text-black" href="<?php echo get_permalink(get_page_by_path("service_two"))?>"><p class="text-black"><?php echo esc_html(get_field('service_two'));?></p></a>
             <?php endif;?>
         </div>
         <div class="col-12 col-sm-3">
             <?php if (get_field('service_three')):?>
-              <a class="text-black" href="<?php echo get_permalink(get_page_by_path("services"))?>"><p class="text-black"><?php echo esc_html(get_field('service_three'));?></p></a>
+              <a class="text-black" href="<?php echo get_permalink(get_page_by_path("service_three"))?>"><p class="text-black"><?php echo esc_html(get_field('service_three'));?></p></a>
             <?php endif;?>
         </div>
     </div>
@@ -88,17 +95,17 @@ endif;
     <div id="services-second3" class="row d-flex justify-content-around">
         <div class="col-12 col-sm-3">
             <?php if (get_field('service_four')):?>
-              <a class="text-black" href="<?php echo get_permalink(get_page_by_path("services"))?>"><p class="text-black"><?php echo esc_html(get_field('service_four'));?></p></a>
+              <a class="text-black" href="<?php echo get_permalink(get_page_by_path("service_four"))?>"><p class="text-black"><?php echo esc_html(get_field('service_four'));?></p></a>
             <?php endif;?>
         </div>
         <div class="col-12 col-sm-3">
             <?php if (get_field('service_five')):?>
-              <a class="text-black" href="<?php echo get_permalink(get_page_by_path("services"))?>"><p class="text-black"><?php echo esc_html(get_field('service_five'));?></p></a>
+              <a class="text-black" href="<?php echo get_permalink(get_page_by_path("service_five"))?>"><p class="text-black"><?php echo esc_html(get_field('service_five'));?></p></a>
             <?php endif;?>
         </div>
         <div class="col-12 col-sm-3">
             <?php if (get_field('service_six')):?>
-              <a class="text-black" href="<?php echo get_permalink(get_page_by_path("services"))?>"><p class="text-black"><?php echo esc_html(get_field('service_six'));?></p></a>
+              <a class="text-black" href="<?php echo get_permalink(get_page_by_path("service_six"))?>"><p class="text-black"><?php echo esc_html(get_field('service_six'));?></p></a>
             <?php endif;?>
         </div>
     </div>
@@ -106,17 +113,17 @@ endif;
     <div id="services-third3" class="row d-flex justify-content-around">
         <div class="col-12 col-sm-3">
             <?php if (get_field('service_seven')):?>
-              <a class="text-black" href="<?php echo get_permalink(get_page_by_path("services"))?>"><p class="text-black"><?php echo esc_html(get_field('service_seven'));?></p></a>
+              <a class="text-black" href="<?php echo get_permalink(get_page_by_path("service_seven"))?>"><p class="text-black"><?php echo esc_html(get_field('service_seven'));?></p></a>
             <?php endif;?>
         </div>
         <div class="col-12 col-sm-3">
             <?php if (get_field('service_eight')):?>
-              <a class="text-black" href="<?php echo get_permalink(get_page_by_path("services"))?>"><p class="text-black"><?php echo esc_html(get_field('service_eight'));?></p></a>
+              <a class="text-black" href="<?php echo get_permalink(get_page_by_path("service_eight"))?>"><p class="text-black"><?php echo esc_html(get_field('service_eight'));?></p></a>
             <?php endif;?>
         </div>
         <div class="col-12 col-sm-3">
             <?php if (get_field('service_nine')):?>
-              <a class="text-black" href="<?php echo get_permalink(get_page_by_path("services"))?>"><p class="text-black"><?php echo esc_html(get_field('service_nine'));?></p></a>
+              <a class="text-black" href="<?php echo get_permalink(get_page_by_path("service_nine"))?>"><p class="text-black"><?php echo esc_html(get_field('service_nine'));?></p></a>
             <?php endif;?>
         </div>
     </div>
@@ -128,7 +135,7 @@ endif;
   <img id="newsletter-img" src="<?php the_field("newsletter_image")?>" alt="">
   <div>
       <div class="text-start px-5">
-        <h2 id="tilmeld">TILMELD DIG VORES<strong> NYHEDSBREV</strong></h2> 
+        <h3 id="tilmeld">TILMELD DIG VORES<strong> NYHEDSBREV</strong></h3> 
       </div>
       <div class="text-start px-5 py-2">
         <p id="tilmeld-paragraf" class="me-5">Hold dig opdateret på vores arrangementer i butikken, samt løbende tilbud via vores nyhedsbrev, ved at tilmelde dig herunder.</p>
