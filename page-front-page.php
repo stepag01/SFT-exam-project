@@ -61,7 +61,7 @@ endif;
       </h3>
     <?php endif;?>
   </div>
-  <div class="px-3 px-md-5">
+  <div class="px-3 pt-2 px-md-5">
     <?php if (get_field('description')):?> 
         <p class="text-black px-3 px-sm-0"> 
           <?php echo esc_html(get_field('description'));?>
