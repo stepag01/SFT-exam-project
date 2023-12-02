@@ -605,6 +605,10 @@ a {
     height: 1170px;
   }
 
+  #contact-heading {
+    padding-bottom: 20px;
+  }
+
 }
 
 
@@ -867,11 +871,11 @@ a {
   }
 
   #service-box {
-    height: 655px;
+    height: 670px;
   }
 
   #contact-heading {
-    margin-top: 5px;
+    margin-top: 50px;
   }
 
 }
@@ -879,6 +883,18 @@ a {
 
 /*CASE-FORM STYLING*/
 @media (min-width:768px) and (max-width:900px) {
+
+#case-paragraf1 {
+  margin-top: 15px;
+}
+
+#case-paragraf2 {
+  margin-top: 15px;
+}
+
+#case-paragraf3 {
+  margin-top: 25px;
+}
 
 #case-description1 {
   margin-top: -20px;

@@ -24,7 +24,7 @@ endif;
         <div><img src="<?php the_field("service-one-image")?>" class="" alt="..." width="263" height="300"></div>
         <div class="card-body">
             <?php if (get_field('service-heading-one')): ?>
-                <p class="text-black"><?php echo esc_html(get_field('service-heading-one')); ?></p>
+                <p class="text-black"><strong><?php echo esc_html(get_field('service-heading-one'));?></strong></p>
             <?php endif; ?>
             <?php if (get_field('service-description-one')): ?>
                 <p class="text-black"><?php echo esc_html(get_field('service-description-one')); ?></p>
@@ -35,10 +35,10 @@ endif;
         <div><img src="<?php the_field("service-two-image")?>" class="" alt="..." width="263" height="300"></div>
         <div class="card-body">
             <?php if (get_field('service-heading-two')): ?>
-                <p class="text-black"><?php echo esc_html(get_field('service-heading-two')); ?></p>
+                <p class="text-black"><strong><?php echo esc_html(get_field('service-heading-two'));?></strong></p>
             <?php endif; ?>
             <?php if (get_field('service-description-two')): ?>
-                <p class="text-black"><?php echo esc_html(get_field('service-description-two')); ?></p>
+                <p class="text-black"><?php echo esc_html(get_field('service-description-two'));?></p>
             <?php endif; ?>
         </div>
     </div>
@@ -46,10 +46,10 @@ endif;
         <div><img src="<?php the_field("service-three-image")?>" class="" alt="..." width="263" height="300"></div>
         <div class="card-body">
             <?php if (get_field('service-heading-three')): ?>
-                <p class="text-black"><?php echo esc_html(get_field('service-heading-three')); ?></p>
+                <p class="text-black"><strong><?php echo esc_html(get_field('service-heading-three'));?></strong></p>
             <?php endif; ?>
             <?php if (get_field('service-description-three')): ?>
-                <p class="text-black"><?php echo esc_html(get_field('service-description-three')); ?></p>
+                <p class="text-black"><?php echo esc_html(get_field('service-description-three'));?></p>
             <?php endif; ?>
         </div>
     </div>
@@ -57,10 +57,10 @@ endif;
         <div><img src="<?php the_field("service-four-image")?>" class="" alt="..." width="263" height="300"></div>
         <div class="card-body">
             <?php if (get_field('service-heading-four')): ?>
-                <p class="text-black"><?php echo esc_html(get_field('service-heading-four')); ?></p>
+                <p class="text-black"><strong><?php echo esc_html(get_field('service-heading-four'));?></strong></p>
             <?php endif; ?>
             <?php if (get_field('service-description-four')): ?>
-                <p class="text-black"><?php echo esc_html(get_field('service-description-four')); ?></p>
+                <p class="text-black"><?php echo esc_html(get_field('service-description-four'));?></p>
             <?php endif; ?>
         </div>
     </div>

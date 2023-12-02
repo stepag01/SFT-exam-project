@@ -131,7 +131,7 @@ endif;
         <h2 id="tilmeld">TILMELD DIG VORES<strong> NYHEDSBREV</strong></h2> 
       </div>
       <div class="text-start px-5 py-2">
-        <p id="tilmeld-paragraf" class="me-5">Hold dig opdateret på vores arrangementer i butikken samt løbende tilbud via vores nyhedsbrev, ved at tilmelde dig herunder.</p>
+        <p id="tilmeld-paragraf" class="me-5">Hold dig opdateret på vores arrangementer i butikken, samt løbende tilbud via vores nyhedsbrev, ved at tilmelde dig herunder.</p>
       </div>
       <div id="mc_embed_signup">
         <form action="https://easv365.us21.list-manage.com/subscribe/post?u=b86e2bda8f5db7614c413780b&amp;id=a1de8dac54&amp;f_id=0055ece6f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
