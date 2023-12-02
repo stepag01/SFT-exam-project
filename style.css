@@ -313,6 +313,10 @@ a {
   color: #000000;
 }
 
+#aboutus-container {
+  background-color: #fcfcfc;
+}
+
 
 
 /*SERVICE-SIDE STYLING*/
@@ -442,6 +446,9 @@ a {
   height: 650px;
 }
 
+#contact-container-box {
+  background-color: #fcfcfc;
+}
 
 
 /*BRANDS-SECTION STYLING*/
@@ -629,7 +636,7 @@ a {
 
   #service-contact-section {
     height: 700px;
-    padding-left: 45px;
+    padding-left: 55px;
   }
   
   #service-box {
@@ -748,7 +755,7 @@ a {
   
   #contact-heading {
     margin-top: 10px;
-    margin-bottom: -25px;
+    margin-bottom: -40px;
   }
 
 

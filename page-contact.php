@@ -7,9 +7,10 @@ if (have_posts()) : the_post();
 endif;
 ?> 
 
+<div id="contact-container-box" class="item">
 <div class="text-center pt-3 pb-3">
     <div>
-        <h2 id="contact-heading"><strong>KONTAKT OS</strong></h2>
+        <h2 id="contact-heading"><strong>SØRENS FARVE & TAPET</strong></h2>
     </div>
     <div>
         <?php if ( get_field('contact_title_') ):?> 
@@ -104,6 +105,7 @@ endif;
 </div>
 
 </section>
+</div>
 
 
 <?php get_footer()?> 
