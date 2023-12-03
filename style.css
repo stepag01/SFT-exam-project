@@ -11,9 +11,9 @@ body, html {
 
 /*FORSIDE STYLING*/
 .bgimage {
-    width:100%;
+    width:  100%;
     height: 100%;
-    background: url('http://srens-farve-tapet.local/wp-content/uploads/2023/11/pexels-nugroho-wahyu-3097112-scaled-e1701281663525.jpg');
+    background: url('img/hero-img.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;

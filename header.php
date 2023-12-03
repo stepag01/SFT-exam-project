@@ -17,7 +17,7 @@
               <span class="line line3"></span>
             </div>  
             <div class="logo pb-1">
-              <img src="<?php echo get_template_directory_uri()?>/img/SFT-logo.png" height="50" width="170">
+             <a href="<?php echo get_permalink(get_page_by_path("front-page"))?>"><img src="<?php echo get_template_directory_uri()?>/img/SFT-logo.png" height="50" width="170"></a>
             </div>
           <div class="menu-items">
           <ul class="navbar-nav">
