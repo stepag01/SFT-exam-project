@@ -7,6 +7,7 @@ if (have_posts()):the_post();
 endif;
 ?> 
 
+<div id="case-item">
 <div class="item text-center px-5">
   <div class="pt-5">
     <h2>CASES HOS <strong>SØRENS FARVE & TAPET</strong></h2>
@@ -93,31 +94,6 @@ endif;
     </div>
   </div>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      
-
-
-
-
-
-
+</div>
 
 <?php get_footer()?> 

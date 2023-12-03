@@ -77,17 +77,17 @@ endif;
     <div id="services-first3" class="row d-flex justify-content-around">
         <div class="col-12 col-sm-3">
             <?php if (get_field('service_one')):?>
-                <a class="text-black" href="<?php echo get_permalink(get_page_by_path("service_one"))?>"><p class="text-black"><?php echo esc_html(get_field('service_one'));?></p></a>
+                <a class="text-black" href="<?php echo get_permalink(get_page_by_path("services"))?>"><p class="text-black"><?php echo esc_html(get_field('service_one'));?></p></a>
             <?php endif;?>
         </div>
         <div class="col-12 col-sm-3">
             <?php if (get_field('service_two')):?>
-              <a class="text-black" href="<?php echo get_permalink(get_page_by_path("service_two"))?>"><p class="text-black"><?php echo esc_html(get_field('service_two'));?></p></a>
+              <a class="text-black" href="<?php echo get_permalink(get_page_by_path("services"))?>"><p class="text-black"><?php echo esc_html(get_field('service_two'));?></p></a>
             <?php endif;?>
         </div>
         <div class="col-12 col-sm-3">
             <?php if (get_field('service_three')):?>
-              <a class="text-black" href="<?php echo get_permalink(get_page_by_path("service_three"))?>"><p class="text-black"><?php echo esc_html(get_field('service_three'));?></p></a>
+              <a class="text-black" href="<?php echo get_permalink(get_page_by_path("services"))?>"><p class="text-black"><?php echo esc_html(get_field('service_three'));?></p></a>
             <?php endif;?>
         </div>
     </div>
@@ -95,17 +95,17 @@ endif;
     <div id="services-second3" class="row d-flex justify-content-around">
         <div class="col-12 col-sm-3">
             <?php if (get_field('service_four')):?>
-              <a class="text-black" href="<?php echo get_permalink(get_page_by_path("service_four"))?>"><p class="text-black"><?php echo esc_html(get_field('service_four'));?></p></a>
+              <a class="text-black" href="<?php echo get_permalink(get_page_by_path("services"))?>"><p class="text-black"><?php echo esc_html(get_field('service_four'));?></p></a>
             <?php endif;?>
         </div>
         <div class="col-12 col-sm-3">
             <?php if (get_field('service_five')):?>
-              <a class="text-black" href="<?php echo get_permalink(get_page_by_path("service_five"))?>"><p class="text-black"><?php echo esc_html(get_field('service_five'));?></p></a>
+              <a class="text-black" href="<?php echo get_permalink(get_page_by_path("services"))?>"><p class="text-black"><?php echo esc_html(get_field('service_five'));?></p></a>
             <?php endif;?>
         </div>
         <div class="col-12 col-sm-3">
             <?php if (get_field('service_six')):?>
-              <a class="text-black" href="<?php echo get_permalink(get_page_by_path("service_six"))?>"><p class="text-black"><?php echo esc_html(get_field('service_six'));?></p></a>
+              <a class="text-black" href="<?php echo get_permalink(get_page_by_path("services"))?>"><p class="text-black"><?php echo esc_html(get_field('service_six'));?></p></a>
             <?php endif;?>
         </div>
     </div>
@@ -113,17 +113,17 @@ endif;
     <div id="services-third3" class="row d-flex justify-content-around">
         <div class="col-12 col-sm-3">
             <?php if (get_field('service_seven')):?>
-              <a class="text-black" href="<?php echo get_permalink(get_page_by_path("service_seven"))?>"><p class="text-black"><?php echo esc_html(get_field('service_seven'));?></p></a>
+              <a class="text-black" href="<?php echo get_permalink(get_page_by_path("services"))?>"><p class="text-black"><?php echo esc_html(get_field('service_seven'));?></p></a>
             <?php endif;?>
         </div>
         <div class="col-12 col-sm-3">
             <?php if (get_field('service_eight')):?>
-              <a class="text-black" href="<?php echo get_permalink(get_page_by_path("service_eight"))?>"><p class="text-black"><?php echo esc_html(get_field('service_eight'));?></p></a>
+              <a class="text-black" href="<?php echo get_permalink(get_page_by_path("services"))?>"><p class="text-black"><?php echo esc_html(get_field('service_eight'));?></p></a>
             <?php endif;?>
         </div>
         <div class="col-12 col-sm-3">
             <?php if (get_field('service_nine')):?>
-              <a class="text-black" href="<?php echo get_permalink(get_page_by_path("service_nine"))?>"><p class="text-black"><?php echo esc_html(get_field('service_nine'));?></p></a>
+              <a class="text-black" href="<?php echo get_permalink(get_page_by_path("services"))?>"><p class="text-black"><?php echo esc_html(get_field('service_nine'));?></p></a>
             <?php endif;?>
         </div>
     </div>

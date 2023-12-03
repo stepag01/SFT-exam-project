@@ -237,6 +237,7 @@ a {
 
 #newsletterform {
   margin-left: 35px;
+  width: 500px;
 }
 
 input[type=text1] {
@@ -253,7 +254,7 @@ input[type=e-mail] {
   width: 250px;
 }
 
-input[type=submit1] {
+input[type=submit] {
   background-color: #937848b1;
   border: none;
   padding: 5px;
@@ -335,6 +336,11 @@ input[type=submit1] {
 #case-description3 {
   margin-top: -20px;
 }
+
+#case-item {
+  background-color: #fcfcfc;
+}
+
 
 
 /*GALLERI STYLING*/
@@ -548,6 +554,7 @@ input[type=email] {
   
   #newsletterform {
     margin-left: 20px;
+    width: 350px
   }
 
   input[type=text1] {
@@ -773,8 +780,6 @@ input[type=email] {
 
 
 
-
-
 /*TABLET VERSION*/
 @media (min-width:768px) and (max-width:900px) {
 /*FORSIDE*/
@@ -825,6 +830,10 @@ input[type=email] {
   #newsletter-img {
     height: 440px;
   } 
+
+  #newsletterform {
+    width: 400px;
+  }
 
   #newsletter-button {
     margin-top: -10px;
@@ -995,11 +1004,16 @@ input[type=email] {
 @media (min-width:768px) and (max-width:900px) {
 
   #aboutus-container {
-    height: 600px;
+    height: 700px;
+    margin: 0;
   }
 
   #aboutus-title{
     font-size: 20px;
+  }
+
+  #aboutus-img{
+    margin-top: 40px;
   }
   
   }
