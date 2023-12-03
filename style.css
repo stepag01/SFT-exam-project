@@ -223,94 +223,57 @@ a {
   background-color:#b59660b1;
   display: flex;
   width: 100%;
-  height: 530px;
+  height: 430px;
 } 
 
 #newsletter-img {
-  height: 530px;
+  height: 430px;
   object-fit: contain;
 }
 
 #tilmeld {
-  padding-top: 30px;
+  padding-top: 60px;
+}
+
+#newsletterform {
+  margin-left: 35px;
+}
+
+input[type=text1] {
+  margin-left: 8px;
+  background-color: #00000000;
+  border: solid 1px;
+  width: 200px;
+}
+
+input[type=e-mail] {
+  margin-left: 20px;
+  background-color: #00000000;
+  border: solid 1px;
+  width: 250px;
+}
+
+input[type=submit1] {
+  background-color: #937848b1;
+  border: none;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 10px;
+  width: 75px;
+}
+
+.mc4wp-response {
+  font-weight: 600;
+  margin-top: 20px;
 }
 
 #anmeldelses-box {
   height: 150px;
 }
 
-#review-description {
-  font-size: 14px;
-  padding: 10px;
-}
-
-
-#mc_embed_signup{
-  background-color:#ffffff00;
-  font: 15px Arial; 
-  width: 400px;
-  height: 300px;
-  margin-left: 50px;
-}
-
-#mc-embedded-subscribe-form {
-  height: 300px;
-}
-
-#mc_embed_signup_scroll {
-  height: 300px;
-}
-
-.indicates-required {
-  padding-bottom: 10px;
-  font-style: italic;
-  font-weight: bold;
-  font-size: 12px;
-}
-
-.mc-field-group {
-  padding-bottom: 20px;
-}
-
 .text {
   padding-left: -5px;
-}
-
-#mce-FNAME {
-  width: 300px;
-  height: 25px;
-  background-color: rgba(0, 0, 0, 0);
-  border: solid 1px;
-}
-
-#mce-LNAME {
-  width: 300px;
-  height: 25px;
-  background-color: rgba(0, 0, 0, 0);
-  border: solid 1px;
-}
-
-#mce-EMAIL {
-  width: 300px;
-  height: 25px;
-  background-color: rgba(221, 0, 0, 0);
-  border: solid 1px;
-}
-
-#mce-PHONE {
-  width: 300px;
-  height: 25px;
-  background-color: rgba(0, 0, 0, 0);
-  border: solid 1px;
-}
-
-.button {
-  border: solid 1px #b59660;
-  padding: 6px;
-  width: 75px;
-  height: 35px;
-  background-color: #ab8d59;
-  color: #000000;
 }
 
 #aboutus-container {
@@ -341,27 +304,7 @@ a {
 }
 
 
-#contact-form-section {
-  font-size: 14px;
-  padding-bottom: 10px;
-  height: 400px;
-}
 
-#contact-heading {
-  margin-top: 30px;
-  padding-top: 20px;
-  margin-bottom: 15px;
-}
-
-.wpcf7 input[type="submit"] {
-  background-color: #fcfcfc;
-  border: none;
-  font-weight: 500;
-  font-size: 15px;
-  border: #3d3d3d solid 1px;
-  width: 70px;
-  height: 30px;
-}
 
 
 /*CASES STYLING*/
@@ -406,7 +349,6 @@ a {
 
 
 /*CONTACT-FORM STYLING*/
-
 #contact-hero-image {
   height:342px;
 }
@@ -452,6 +394,42 @@ a {
   background-color: #fcfcfc;
 }
 
+#contact-form-section {
+  font-size: 14px;
+  padding-bottom: 10px;
+  height: 400px;
+}
+
+#contact-heading {
+  margin-top: 30px;
+  padding-top: 20px;
+  margin-bottom: 15px;
+}
+
+input[type=text] {
+  background-color: rgba(0, 0, 0, 0);
+  border: solid 1px;
+}
+
+input[type=email] {
+  background-color: #00000000;
+  border: solid 1px;
+}
+
+.wpcf7-textarea {
+  background-color: #00000000;
+  border: solid 1px;
+}
+
+[type=submit] {
+  background-color: #fcfcfc;
+  color: #000000;
+  border: solid 1px;
+  padding: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 14px;
+}
 
 /*BRANDS-SECTION STYLING*/
 
@@ -559,7 +537,7 @@ a {
   }
 
   #newsletter-box {
-    height: 1190px;
+    height: 1100px;
     display: grid;
     margin-top: 10px;
   } 
@@ -568,8 +546,22 @@ a {
     height: 563px;
   }
   
+  #newsletterform {
+    margin-left: 20px;
+  }
+
+  input[type=text1] {
+    margin-left: 5px;
+    width: 160px;
+  }
+  
+  input[type=e-mail] {
+    margin-left: 16px;
+    width: 220px;
+  }
+
   #tilmeld {
-    margin-top: -75px;
+    margin-top: -50px;
     margin-left: -15px;
   }
 
@@ -581,18 +573,6 @@ a {
     height: 160px;
   }
 
-  #mc_embed_signup{
-    margin-left: -40px;
-  }
-
-  .mc-field-group {
-    margin-left: 75px;
-  }
-
-  #newsletter-button {
-    margin-left: 75px;
-  }
-
   #anmeldelses-section {
     padding-left: 32px;
     margin-bottom: 40px;
@@ -601,7 +581,6 @@ a {
   #frontpage-title {
     font-size: 20px;
   }
-  
 }
 
 
@@ -634,20 +613,21 @@ a {
   #service-img {
     height: 470px;
     padding-left: 23px;
+    padding-bottom: -50px;
   } 
 
   #service-contact-section {
-    height: 700px;
+    height: 600px;
     padding-left: 55px;
   }
   
   #service-box {
-    height: 1220px;
+    height: 1250px;
 
   }
 
   #contact-heading {
-    padding-bottom: 40px;
+    padding-bottom: 50px;
   }
 
   #services-title {
@@ -752,7 +732,7 @@ a {
   }
 
   #contact-form-box {
-    height: 1020px;
+    height: 1070px;
   }
   
   #contact-heading {
@@ -776,6 +756,9 @@ a {
     margin-bottom: -20px;
   }
    
+  [type=submit] {
+    margin-top: 5px;
+  }
 }
 
 
@@ -801,10 +784,6 @@ a {
 
   .bgimage {
     height: 600px;
-  }
-
-  #ydelser-box {
-    height: 250px;
   }
 
   #services-first3 {
@@ -835,24 +814,20 @@ a {
   }
 
   #tilmeld {
-    padding-top: 20px;
+    padding-top: 50px;
     font-size: 20px;
   }
 
   #newsletter-box {
-    height: 520px;
+    height: 440px;
   } 
 
   #newsletter-img {
-    height: 520px;
+    height: 440px;
   } 
 
   #newsletter-button {
     margin-top: -10px;
-  }
-
-  #ydelser-box {
-    height: 220px;
   }
 
   #frontpage-service-title {
@@ -880,11 +855,7 @@ a {
     margin-left: -10px;
   }
 
-  #service-img {
-    height: 430px;
-    margin-left: 25px;
-    margin-top: 30px;
-  }
+
 
   /*CASES STYLING*/
   #cases-img1 {
@@ -906,8 +877,37 @@ a {
 }
 
 
+
+/*YDELSER-STYLING*/
+@media (min-width:768px) and (max-width:900px) {
+  #ydelser-box {
+    height: 220px;
+  }
+
+  #service-img {
+    height: 430px;
+    margin-left: 25px;
+    margin-top: 30px;
+  }
+
+  #service-box {
+    height: 680px;
+  }
+
+  #services-title {
+    font-size: 20px;
+  }
+
+}
+
+
+
 /*CONTACT-FORM STYLING*/
 @media (min-width:768px) and (max-width:900px) {
+
+  #contact-container-box {
+    height: 1400px;
+  }
 
   #contact-img {
     height: 320px;
@@ -946,12 +946,12 @@ a {
     height: 1350px;
   }
 
-  #service-box {
-    height: 670px;
+  #contact-heading {
+    margin-top: 12px;
   }
 
-  #contact-heading {
-    margin-top: 15px;
+  #contact-title {
+    font-size: 20px;
   }
 
 }
@@ -1015,34 +1015,6 @@ a {
   }
 
 
-  /*KONTAKT STYLING*/
-  @media (min-width:768px) and (max-width:900px) {
+  
 
-    #contact-title {
-      font-size: 20px;
-    }
-
-    #contact-heading {
-      margin-top: 20px;
-    }
-
-    #contact-box {
-      height: 1200px;
-    }
-    
-    }
-
-
-     /*SERVICES STYLING*/
-  @media (min-width:768px) and (max-width:900px) {
-
-    #services-title {
-      font-size: 20px;
-    }
-
-    #service-box {
-      height:650px;
-    }
-    
-    }
   

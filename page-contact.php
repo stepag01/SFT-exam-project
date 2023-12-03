@@ -98,8 +98,10 @@ endif;
       </div>
     </div>
     <div id="service-contact-section" class="px-5 col-md-6 col-lg-5">
-    <h3 id="contact-form-headline" class="pt-5">VI STÅR KLAR TIL AT <strong>HJÆLPE DIG</strong></h3>
-        <?php echo do_shortcode('[contact-form-7 id="b7c4d11" title="Kontakt-form2"]')?>
+        <h3 id="contact-form-headline" class="pt-5">VI STÅR KLAR TIL AT <strong>HJÆLPE DIG</strong></h3>
+        <div>
+            <?php echo do_shortcode('[contact-form-7 id="b7c4d11" title="Kontakt-form2"]')?>
+        </div>
     </div>
   </div>
 </div>
