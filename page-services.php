@@ -26,7 +26,7 @@ endif;
 
 <div class="d-flex flex-wrap justify-content-center pt-3 pb-2 px-5">
     <div class="card m-3 col-12 col-sm-6" style="width: 16.5rem;">
-        <div><img src="<?php the_field("service-one-image")?>" class="" alt="..." width="263" height="300"></div>
+        <div><?php $image = get_field("service-one-image")?><img src="<?php echo $image["sizes"]["medium"]?>" class="" width="263" height="300"></div>
         <div class="card-body">
             <?php if (get_field('service-heading-one')): ?>
                 <p class="text-black"><strong><?php echo esc_html(get_field('service-heading-one'));?></strong></p>
@@ -37,7 +37,7 @@ endif;
         </div>
     </div>
     <div class="card m-3 col-12 col-sm-6" style="width: 16.5rem;">
-        <div><img src="<?php the_field("service-two-image")?>" class="" alt="..." width="263" height="300"></div>
+    <div><?php $image = get_field("service-two-image")?><img src="<?php echo $image["sizes"]["medium"]?>" class="" width="263" height="300"></div>
         <div class="card-body">
             <?php if (get_field('service-heading-two')): ?>
                 <p class="text-black"><strong><?php echo esc_html(get_field('service-heading-two'));?></strong></p>
@@ -48,7 +48,7 @@ endif;
         </div>
     </div>
     <div class="card m-3 col-12 col-sm-6" style="width: 16.5rem;">
-        <div><img src="<?php the_field("service-three-image")?>" class="" alt="..." width="263" height="300"></div>
+    <div><?php $image = get_field("service-three-image")?><img src="<?php echo $image["sizes"]["medium"]?>" class="" width="263" height="300"></div>
         <div class="card-body">
             <?php if (get_field('service-heading-three')): ?>
                 <p class="text-black"><strong><?php echo esc_html(get_field('service-heading-three'));?></strong></p>
@@ -59,7 +59,7 @@ endif;
         </div>
     </div>
     <div class="card m-3 col-12 col-sm-6" style="width: 16.5rem;">
-        <div><img src="<?php the_field("service-four-image")?>" class="" alt="..." width="263" height="300"></div>
+    <div><?php $image = get_field("service-four-image")?><img src="<?php echo $image["sizes"]["medium"]?>" class="" width="263" height="300"></div>
         <div class="card-body">
             <?php if (get_field('service-heading-four')): ?>
                 <p class="text-black"><strong><?php echo esc_html(get_field('service-heading-four'));?></strong></p>
@@ -72,7 +72,7 @@ endif;
 </div>
 
 
-<div class="item text-center px-5">
+<div class="item text-center px-5 pb-4">
   <div class="pt-5 px-4">
     <h4>SKAL <strong>VI HJÆLPE DIG </strong> MED DIT NÆSTE PROJEKT ?</h4>
   </div>
@@ -86,17 +86,18 @@ endif;
 
 <div id="service-box" class="item">
   <div class="row justify-content-center w-100">
-    <div class="col-md-6 col-lg-5 pt-5">
-      <div class="img pb-5 text-center">
+    <div class="col-md-6 col-lg-5">
+      <div class="img text-center">
         <img id="service-img" src="<?php the_field("service_section_contact_image") ?>" class="mx-auto" alt="">
       </div>
     </div>
     <div id="service-contact-section" class="col-md-6 col-lg-5">
       <h5 id="contact-heading">HOS <strong>SØRENS FARVE & TAPET</strong><br> ER VI KLAR TIL <strong> HJÆLPE DIG</strong></h5>
-      <?php echo do_shortcode('[contact-form-7 id="cf12f98" title="Kontakt-form1"]')?>
+      <?php echo do_shortcode('[contact-form-7 id="e587677" title="Kontaktform-1"]')?>
     </div>
   </div>
 </div>
+
 
 
 

@@ -6,14 +6,12 @@ Auther: Team SKM
 
 body, html {
     height: 100vh;
-    background-color: #fcfcfc
 }
 
 /*FORSIDE STYLING*/
 .bgimage {
     width:  100%;
     height: 100%;
-    background: url('http://srens-farve-tapet.local/wp-content/uploads/2023/11/pexels-nugroho-wahyu-3097112-scaled-e1701281663525.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
@@ -41,6 +39,12 @@ body, html {
 #reviews {
     font-weight: bold;
     padding-bottom: 20px;
+}
+
+#inspo-section {
+  padding-left: 30px;
+  padding-right: 20px;
+  padding-top: 50px;
 }
 
 
@@ -211,6 +215,10 @@ footer {
   height: 200px;
 }
 
+#ydelser-box a:hover{
+  font-weight: bold;
+}
+
 #ydelser-box a {
   text-decoration: none;
 }
@@ -223,11 +231,11 @@ a {
   background-color:#b59660b1;
   display: flex;
   width: 100%;
-  height: 430px;
+  height: 450px;
 } 
 
 #newsletter-img {
-  height: 430px;
+  height: 450px;
   object-fit: contain;
 }
 
@@ -255,8 +263,8 @@ input[type=e-mail] {
 }
 
 input[type=submit] {
-  background-color: #937848b1;
-  border: none;
+  background-color: #000000;
+  color: white;
   padding: 5px;
   padding-left: 10px;
   padding-right: 10px;
@@ -264,30 +272,36 @@ input[type=submit] {
   width: 75px;
 }
 
-.mc4wp-response {
-  font-weight: 600;
-  margin-top: 20px;
+.mc-embedded-subscribe-form {
+  height: 300px;
+}
+
+.mc-field-group {
+  height: 50px;
 }
 
 #anmeldelses-box {
-  height: 150px;
+  height: 400px;
 }
 
 .text {
   padding-left: -5px;
 }
 
-#aboutus-container {
-  background-color: #fcfcfc;
+
+#review_image {
+ height: 500px;
 }
 
-
-
+/*ABOUT-PAGE*/
+#btn {
+  border: none;
+  border-radius: 0%;
+}
 
 
 /*SERVICE-SIDE STYLING*/
 .service-container {
-  background-color: #fcfcfc;
   height: 590px;
   display: flex;
   margin-top: 30px;
@@ -301,11 +315,8 @@ input[type=submit] {
 #service-contact-section {
   font-size: 14px;
   padding-bottom:20px;
-  height: 700px;
+  height: 740px;
 }
-
-
-
 
 
 /*CASES STYLING*/
@@ -337,9 +348,6 @@ input[type=submit] {
   margin-top: -20px;
 }
 
-#case-item {
-  background-color: #fcfcfc;
-}
 
 
 
@@ -350,7 +358,7 @@ input[type=submit] {
 }
 
 #galleri {
-  margin-left: 0.5px;
+  margin-left: 20px;
 }
 
 
@@ -392,24 +400,23 @@ input[type=submit] {
   margin-bottom: 20px;
 }
 
-#contact-form-box {
-  height: 650px;
-}
-
-#contact-container-box {
-  background-color: #fcfcfc;
+.contactform {
+  height: 730px;
 }
 
 #contact-form-section {
   font-size: 14px;
   padding-bottom: 10px;
-  height: 400px;
+  height: 730px;
+}
+
+#inner-contactform {
+  height: 600px;
 }
 
 #contact-heading {
-  margin-top: 30px;
-  padding-top: 20px;
   margin-bottom: 15px;
+  padding-top: 20px;
 }
 
 input[type=text] {
@@ -428,7 +435,6 @@ input[type=email] {
 }
 
 [type=submit] {
-  background-color: #fcfcfc;
   color: #000000;
   border: solid 1px;
   padding: 8px;
@@ -437,11 +443,12 @@ input[type=email] {
   margin-top: 14px;
 }
 
-/*BRANDS-SECTION STYLING*/
 
+
+
+/*BRANDS-SECTION STYLING*/
 #brands-box {
-  height: 120px;
-  background-color: #f3f3f3;
+  height: 260px;
 }
 
 #brands-innerbox {
@@ -458,7 +465,7 @@ input[type=email] {
   /*FORSIDE*/
 
   .navbar .menu-items {
-    height: 50.5vh;
+    height: 80.5vh;
     width: 100%;
   }
 
@@ -492,7 +499,17 @@ input[type=email] {
   }
 
   #footer-box {
-    height: 790px;
+    height: 830px;
+  }
+
+  #inspo-text {
+    padding-top:-30px;
+  }
+
+  #inspo-section {
+    padding-left: 30px;
+    padding-right: 20px;
+    padding-top: 5px;
   }
 
   #socials-footer {
@@ -543,9 +560,8 @@ input[type=email] {
   }
 
   #newsletter-box {
-    height: 1100px;
+    height: 1080px;
     display: grid;
-    margin-top: 10px;
   } 
   
   #newsletter-img {
@@ -610,6 +626,7 @@ input[type=email] {
 @media only screen and (max-width: 667px) {
   #about-us-box {
     padding-top: 30px;
+    margin-left: 12px;
     margin-bottom: -30px;
   }
 
@@ -632,12 +649,12 @@ input[type=email] {
   } 
 
   #service-contact-section {
-    height: 600px;
+    height: 700px;
     padding-left: 55px;
   }
   
   #service-box {
-    height: 1250px;
+    height: 1380px;
 
   }
 
@@ -706,7 +723,7 @@ input[type=email] {
 /*BRANDS-SECTION STYLING*/
 @media only screen and (max-width: 667px) {
   #brands-box {
-    height: 435px;
+    height: 780px;
   }
 }
 
@@ -775,6 +792,10 @@ input[type=email] {
   [type=submit] {
     margin-top: 5px;
   }
+
+  .contactform {
+    height: 1250px;
+  }
 }
 
 
@@ -783,7 +804,10 @@ input[type=email] {
   #galleri-title {
     font-size: 18px;
   }
-  
+
+  #galleri {
+    margin-left: 55px;
+  }
 }
 
 
@@ -792,6 +816,12 @@ input[type=email] {
 /*TABLET VERSION*/
 @media (min-width:768px) and (max-width:900px) {
 /*FORSIDE*/
+
+.navbar .menu-items {
+  height: 65.5vh;
+  width: 100%;
+}
+
   .hero-text {
     top: 50%;
   } 
@@ -816,11 +846,11 @@ input[type=email] {
   }
 
   #footer-box {
-    height: 480px;
+    height: 520px;
   }
 
   #brands-box {
-    height: 250px;
+    height: 220px;
   }
 
   #anmeldelses-section {
@@ -856,6 +886,10 @@ input[type=email] {
     font-size: 20px;
   }
 
+  .inner-contact-formbox{
+    height: 500px;
+  }
+
 }
 
 
@@ -871,6 +905,7 @@ input[type=email] {
 
   #about-us-box {
     margin-left: -10px;
+    padding-top: 40px;
   }
 
 
@@ -909,7 +944,7 @@ input[type=email] {
   }
 
   #service-box {
-    height: 680px;
+    height: 760px;
   }
 
   #services-title {
@@ -961,7 +996,16 @@ input[type=email] {
   }
 
   #contact-box {
-    height: 1350px;
+    height: auto;
+  }
+
+  .contactform {
+    height: 800px;
+    margin-bottom: 40px;
+  }
+
+  #inner-contactform {
+    height: 1000px;
   }
 
   #contact-heading {
@@ -971,6 +1015,7 @@ input[type=email] {
   #contact-title {
     font-size: 20px;
   }
+
 
 }
 
@@ -1034,10 +1079,9 @@ input[type=email] {
   #galleri-title {
     font-size: 20px;
   }
+
+  #galleri {
+    margin-left: 4.5px;
+  }
   
   }
-
-
-  
-
-  

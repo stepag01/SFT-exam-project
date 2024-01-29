@@ -19,7 +19,7 @@ endif;
     </div>
 </div>
 
-<section id="contact-box" class="mb-4 pt-5">
+<section id="contact-box" class="">
     <div class="row w-100 justify-content-center">
         <div class="col-md-4 mb-5 me-3">
             <img id="contact-hero-image" src="<?php the_field("contact_image")?>" class="mx-auto">
@@ -90,20 +90,21 @@ endif;
     </div>
     
 
-<div id="contact-form-box" class="item">
-  <div class="row w-100 justify-content-center">
-    <div class="col-md-6 col-lg-5 pt-5">
-      <div class="img pb-5 text-center">
-        <img id="contact-img" src="<?php the_field("contact_form_image") ?>" class="mx-auto" alt="">
-      </div>
-    </div>
-    <div id="service-contact-section" class="px-5 col-md-6 col-lg-5">
-        <h3 id="contact-form-headline" class="pt-5">VI STÅR KLAR TIL AT <strong>HJÆLPE DIG</strong></h3>
-        <div>
-            <?php echo do_shortcode('[contact-form-7 id="b7c4d11" title="Kontakt-form2"]')?>
+<div class="contactform">
+    <div class="row w-100 justify-content-center">
+        <div class="col-md-6 col-lg-5 pt-5">
+            <div class="img pb-5 text-center">
+                <img id="contact-img" src="<?php the_field("contact_form_image") ?>" class="mx-auto" alt="">
+            </div>
+        </div>
+    
+        <div id="contact-form-section" class="px-5 col-md-6 col-lg-5">
+            <h3 id="contact-form-headline" class="pt-5">VI STÅR KLAR TIL AT <strong>HJÆLPE DIG</strong></h3>
+            <div>
+                <?php echo do_shortcode('[contact-form-7 id="b7c4d11" title="Kontakt-form2"]')?>
+            </div>
         </div>
     </div>
-  </div>
 </div>
 
 </section>

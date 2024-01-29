@@ -7,9 +7,9 @@ if (have_posts()):the_post();
 endif;
 ?> 
 
-<div id="aboutus-container" class="row justify-content-md-center w-100">
+<div id="aboutus-container" class="row justify-content-md-center w-100 mb-5 mt-5">
   <div id="about-us-box" class="col-lg-4 col-md-6 px-3 px-md-5 pr-md-5">
-    <div class="mb-4 m-3 m-lg-5 col-md-12 col-lg-12"><img id="aboutus-img" src="<?php the_field("image")?>" class="img-fluid" alt=""></div>
+    <div class="mb-4 m-3 m-lg-5 col-md-12 col-lg-12"><?php $image = get_field("image")?><img id="aboutus_img" src="<?php echo $image["sizes"]["large"]?>" class="img-fluid"></div>
   </div>
   <div class="col-lg-7 m-lg-5 col-md-6 pt-5 pb-4 px-5 px-md-5 pl-md-5">
     <h2>HVEM ER VI HOS <strong>SØRENS FARVE & TAPET?</strong></h2>
@@ -22,6 +22,11 @@ endif;
       <?php if (get_field('about-us-description')): ?>
         <p class="text-black"><?php echo esc_html(get_field('about-us-description')); ?></p>
       <?php endif; ?>
+      </div>
+      <div class="py-3">
+        <u><a class="text-black" href="<?php echo get_permalink(get_page_by_path("contact")) ?>"><button id="btn" type="button" class="btn btn-dark">Kontakt os for et samarbejde</button></a></u>
+      </div>
+    </div>
     </div>
   </div>
 </div>
