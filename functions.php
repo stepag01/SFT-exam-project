@@ -7,3 +7,13 @@ function my_theme_styles() {
 add_action( 'wp_enqueue_scripts', 'my_theme_styles' );
 
 
+// Add custom scripts and stylesheets
+function add_custom_scripts_and_styles() {
+    // Enqueue custom JavaScript file
+    wp_enqueue_script('custom-script', get_template_directory_uri() . '/custom-script.js', array(), '1.0', true);
+}
+add_action('wp_enqueue_scripts', 'add_custom_scripts_and_styles');
+?>
+
+
+

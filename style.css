@@ -6,7 +6,119 @@ Auther: Team SKM
 
 body, html {
     height: 100vh;
+    margin: 0;
 }
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#cCarousel {
+  position: relative;
+  max-width: 900px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+#cCarousel .arrow {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  width: 45px;
+  height: 45px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  z-index: 1;
+  font-size: 26px;
+  color: white;
+  background: gray;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+#cCarousel #prev {
+  left: -30px;
+}
+
+#cCarousel #next {
+  right: -30px;
+}
+
+#carousel-vp {
+  width: 810px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+}
+
+@media (max-width: 770px) {
+  #carousel-vp {
+    width: 300px;
+  }
+}
+
+@media (max-width: 510px) {
+  #carousel-vp {
+    width: 250px;
+  }
+
+  #cCarousel #prev {
+    left: 10px;
+  }
+  
+  #cCarousel #next {
+    right: 10px;
+  }
+  
+}
+
+#cCarousel #cCarousel-inner {
+  display: flex;
+  position: absolute;
+  transition: 0.3s ease-in-out;
+  gap: 30px;
+  left: 0px;
+}
+
+.cCarousel-item {
+  width: 250px;
+  height: 460px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.cCarousel-item img {
+  width: 100%;
+  object-fit: cover;
+  min-height: 246px;
+  color: white;
+}
+
+.cCarousel-item .infos {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color: black;
+}
+
+
+.infos {
+  font-size: 14px;
+  text-align: justify;
+}
+
+
 
 /*FORSIDE STYLING*/
 .bgimage {

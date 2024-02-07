@@ -16,64 +16,88 @@ endif;
               <em><h3 id="services-title" class="text-black"><?php echo esc_html( get_field('service_title_description') );?></h3></em>
           <?php endif;?>
       </div>
-      <div class="pt-2 pb-3 pb-sm-4 px-3 px-sm-5">
+      <div class="pt-2 pb-0 pb-sm-4 px-3 px-sm-5">
           <?php if ( get_field('service-description') ):?> 
               <p class="text-black"><?php echo esc_html( get_field('service-description') );?></p>
           <?php endif;?>
       </div>
 </div>
 
+<section>
+  <div id="cCarousel">
+    <div class="arrow pb-1" id="prev">←<i class="fa-solid fa-chevron-left"></i></div>
+    <div class="arrow pb-1" id="next">→<i class="fa-solid fa-chevron-right"></i></div>
 
-<div class="d-flex flex-wrap justify-content-center pt-3 pb-2 px-5">
-    <div class="card m-3 col-12 col-sm-6" style="width: 16.5rem;">
-        <div><?php $image = get_field("service-one-image")?><img src="<?php echo $image["sizes"]["medium"]?>" class="" width="263" height="300"></div>
-        <div class="card-body">
-            <?php if (get_field('service-heading-one')): ?>
-                <p class="text-black"><strong><?php echo esc_html(get_field('service-heading-one'));?></strong></p>
-            <?php endif; ?>
-            <?php if (get_field('service-description-one')): ?>
-                <p class="text-black"><?php echo esc_html(get_field('service-description-one')); ?></p>
-            <?php endif; ?>
-        </div>
-    </div>
-    <div class="card m-3 col-12 col-sm-6" style="width: 16.5rem;">
-    <div><?php $image = get_field("service-two-image")?><img src="<?php echo $image["sizes"]["medium"]?>" class="" width="263" height="300"></div>
-        <div class="card-body">
-            <?php if (get_field('service-heading-two')): ?>
-                <p class="text-black"><strong><?php echo esc_html(get_field('service-heading-two'));?></strong></p>
-            <?php endif; ?>
-            <?php if (get_field('service-description-two')): ?>
-                <p class="text-black"><?php echo esc_html(get_field('service-description-two'));?></p>
-            <?php endif; ?>
-        </div>
-    </div>
-    <div class="card m-3 col-12 col-sm-6" style="width: 16.5rem;">
-    <div><?php $image = get_field("service-three-image")?><img src="<?php echo $image["sizes"]["medium"]?>" class="" width="263" height="300"></div>
-        <div class="card-body">
-            <?php if (get_field('service-heading-three')): ?>
-                <p class="text-black"><strong><?php echo esc_html(get_field('service-heading-three'));?></strong></p>
-            <?php endif; ?>
-            <?php if (get_field('service-description-three')): ?>
-                <p class="text-black"><?php echo esc_html(get_field('service-description-three'));?></p>
-            <?php endif; ?>
-        </div>
-    </div>
-    <div class="card m-3 col-12 col-sm-6" style="width: 16.5rem;">
-    <div><?php $image = get_field("service-four-image")?><img src="<?php echo $image["sizes"]["medium"]?>" class="" width="263" height="300"></div>
-        <div class="card-body">
-            <?php if (get_field('service-heading-four')): ?>
-                <p class="text-black"><strong><?php echo esc_html(get_field('service-heading-four'));?></strong></p>
-            <?php endif; ?>
-            <?php if (get_field('service-description-four')): ?>
-                <p class="text-black"><?php echo esc_html(get_field('service-description-four'));?></p>
-            <?php endif; ?>
-        </div>
-    </div>
-</div>
+    <div id="carousel-vp">
+      <div id="cCarousel-inner">
 
+        <article class="cCarousel-item">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/boligindretning.jpg" class="" alt="">
+          <div class="infos mt-3">
+            <h6><strong>BOLIGINDRETNING</strong></h6>
+            <p>
+                Vi tilbyder hos Sørens Farve og Tapet boligindretning, for dig som 
+                mangler nye ideer og inspiration. Er du i tvivl om hvilke trends, 
+                møbler og farver til boligen der hitter, så står vi altid til rådighed 
+                med professionel rådgivning du kan bruge til noget.
+            </p>
+          </div>
+        </article>
+
+        <article class="cCarousel-item">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/maling.jpg" class="" alt="">
+          <div class="infos pt-3">
+            <h6><strong>MALING AF VÆGGE</strong></h6>
+            <p>
+                Vi tilbyder hos Sørens Farve og Tapet maling af den højeste kvalitet.  
+                Står du og mangler professionel vejledning, så er du i trygge hænder hos os. 
+                Vi står altid klar til at hjælpe dig, med dine ønsker og drømme. Vi har et bredt udvalg.
+            </p>
+          </div>
+        </article>
+
+        <article class="cCarousel-item">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/hero-img.jpg.jpg" class="" alt="">
+          <div class="infos pt-3">
+            <h6><strong>TAPET</strong></h6>
+            <p>
+            Vi tilbyder hos Sørens Farve og Tapet et bredt udvalg af tapet. Vi har et bredt 
+            sortiment i alverdens farver og mønstre, så du har et væld af muligheder at vælge imellem. Vi er 
+            altid behjælpelige, og klar med rådgivning, så du får de bedst mulige resultater. 
+            </p>
+          </div>
+        </article>
+
+        <article class="cCarousel-item">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/gulvbelægning.jpg" class="" alt="">
+          <div class="infos pt-3">
+            <h6><strong>GULVBELÆGNING</strong></h6>
+            <p>
+            Vi tilbyder hos Sørens Farve og Tapet gulvbelægning, af den højeste kvalitet. Om du er til
+            "gør-det-selv" eller har behov for professionelle, garanterer vi kyndig rådighed. 
+            Vi har et bredt udvalg i butikken, så der er noget for enhver smag.
+            </p>
+          </div>
+        </article>
+
+        <article class="cCarousel-item">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/gardiner.jpg" class="" alt="">
+          <div class="infos pt-3">
+            <h6><strong>GARDINER</strong></h6>
+            <p>
+                Vi tilbyder hos Sørens Farve og Tapet et bredt udvalg af løsninger til gardiner og solafskærmning. 
+                Gardiner skal både være flotte og funktionelle. Vi vil gerne hjælpe dig, så du får gardiner, du bliver 
+                glad for. Vi måler naturligvis op og monterer. 
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
 
 <div class="item text-center px-5 pb-4">
-  <div class="pt-5 px-4">
+  <div class="pt-3 px-4">
     <h4>SKAL <strong>VI HJÆLPE DIG </strong> MED DIT NÆSTE PROJEKT ?</h4>
   </div>
   <div class="text-center pt-3 px-3 px-sm-5">
